@@ -107,7 +107,7 @@ export const blog_data = [
     description:"lorem lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem ",
     image:blog_pic7,
     date:Date.now(),
-    category:"coding",
+    category:"fashion",
     author:"alex Bennett",
     author_img:author_img
     },
@@ -137,7 +137,7 @@ export const blog_data = [
     description:"lorem lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem ",
     image:blog_pic7,
     date:Date.now(),
-    category:"coding",
+    category:"food",
     author:"alex Bennett",
     author_img:author_img
     },

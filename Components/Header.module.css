@@ -112,7 +112,7 @@
       font-size: 15px;
   }
   .form {
-      gap: 1rem; /* Ajoute un espace entre les champs */
+      gap: 1rem;
       max-width: 100%;
   }
   .button {
@@ -150,7 +150,7 @@
         font-size: 12px;
     }
     .form {
-        gap: 1rem; /* Ajoute un espace entre les champs */
+        gap: 1rem; 
         max-width: 100%;
     }
     .button {
@@ -188,8 +188,8 @@
         font-size: 12px;
     }
     .form {
-        gap: 1rem; /* Ajoute un espace entre les champs */
-        max-width: 100%; /* Occupe toute la largeur disponible */
+        gap: 1rem; 
+        max-width: 100%; 
     }
     .button {
         border: 0.20px solid black;

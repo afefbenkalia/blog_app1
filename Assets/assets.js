@@ -8,7 +8,7 @@ import blog_pic7 from './blog-pic7.jpg';
 import add from './add.png';
 import arrow_right from './arrow-right.png';
 import blog_pencil from './blog-pencil.png';
-import cloud_upload from './blog-pic1.jpg';
+import cloud_upload from './cloud-upload.png';
 import envelope from './envelope.png';
 import facebook from './facebook.png';
 import google from './google.png';

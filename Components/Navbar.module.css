@@ -1,5 +1,143 @@
 .container {
-    position: relative;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 5px 20px; /* Réduit l'espace en haut et en bas */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Style normal (transparent) */
+.container {
+  background-color: transparent;
+}
+
+/* Quand on scrolle */
+.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 20px; /* Légèrement plus grand après scroll */
+}
+
+/* Autres styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px; /* Réduit la taille du logo */
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  padding-right: 50px; /* Moins d'espace à droite */
+}
+
+.links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px; /* Texte légèrement plus petit */
+  font-weight: 300;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: #212222;
+  font-weight: 500;
+  
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .links {
+      display: none; /* Cacher les liens sur mobile */
+  }
+
+  .menu-icon {
+      display: block;
+      font-size: 22px;
+      cursor: pointer;
+  }
+}
+
+
+
+/*.container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0px 20px;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 2%;
+}
+
+.logo {
+  width: 180px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  padding-right: 100px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 16px;
+  font-weight: 500;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: #e5eeee;
+}
+
+
+@media screen and (max-width: 768px) {
+  .links {
+      display: none; 
+
+  .menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+.container {
+    
   
   }
   .header {
@@ -36,7 +174,7 @@
         font-size: 15px;
     }
     .form {
-        gap: 1rem; /* Ajoute un espace entre les champs */
+        gap: 1rem;
         max-width: 100%;
     }
     .button {
@@ -74,7 +212,7 @@
           font-size: 12px;
       }
       .form {
-          gap: 1rem; /* Ajoute un espace entre les champs */
+          gap: 1rem; 
           max-width: 100%;
       }
       .button {
@@ -112,8 +250,8 @@
           font-size: 12px;
       }
       .form {
-          gap: 1rem; /* Ajoute un espace entre les champs */
-          max-width: 100%; /* Occupe toute la largeur disponible */
+          gap: 1rem; 
+          max-width: 100%; 
       }
       .button {
           border: 0.20px solid black;
@@ -132,3 +270,4 @@
       
   
   }
+  */

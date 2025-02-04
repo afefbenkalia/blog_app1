@@ -49,9 +49,15 @@
     margin-bottom: 15px;
     font-size: 14px;
     color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    line-clamp: 2px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Bouton "Read more" */
+
 .readMore {
     display: flex;
     align-items: center;

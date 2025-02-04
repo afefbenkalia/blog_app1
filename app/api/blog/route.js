@@ -1,23 +1,26 @@
-import { NextResponse } from 'next/server'; // Ajout de l'importation nécessaire
+import { ConnectDB } from '@/lib/config/db';
+const { NextResponse } = require('next/server'); // Ajout de l'importation nécessaire
 import { writeFile } from 'fs/promises';
 import BlogModel from '@/lib/models/BlogModel';
-import { ConnectDB } from '@/lib/config/db';
-
 const LoadDB = async () => {
     await ConnectDB();
 };
 LoadDB();
+export async function GET(request) {
 
+    return NextResponse.json({msg:"API WORKING"})
+}
 export async function POST(request) {
+    console.log("Content-Type:", request.headers.get("content-type"));
     const formData = await request.formData();
     console.log("FormData received:");
     
     for (const [key, value] of formData.entries()) {
         console.log(`${key}:`, value);
     }
-
     // Vérifier si l'image est présente dans le formData
     const image = formData.get('image');
+    console.log("Image reçue dans le serveur:", image);
     if (!image) {
         console.error("No image provided");
         return NextResponse.json({ success: false, msg: "No image provided" }, { status: 400 });
@@ -32,12 +35,12 @@ export async function POST(request) {
 
     const imgUrl = `/${timestamp}_${image.name}`;
     const blogData = {
-        title: formData.get('title'),
-        description: formData.get('description'),
-        category: formData.get('category'),
-        author: formData.get('author'),
-        image: imgUrl,
-        author_img: formData.get('author_img'),
+        title:`${formData.get('title')}`,
+        description:`${formData.get('description')}`,
+        category:`${formData.get('category')}`,
+        author:`${formData.get('author')}`,
+        image:`${imgUrl}`,
+        author_img:`${formData.get('authorImg')}`
     };
 
     await BlogModel.create(blogData);
@@ -45,7 +48,6 @@ export async function POST(request) {
 
     return NextResponse.json({ success: true, msg: "Blog Added" });
 }
-
 
 
 

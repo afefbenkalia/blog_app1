@@ -14,7 +14,7 @@ import facebook from './facebook.png';
 import google from './google.png';
 import logo from './logo.jpg';
 import twitter from './twitter.png';
-import author_img from './author_img.jpg';
+import author_img1 from './author_img.jpg';
 import image from './image.png';
 import categ1 from './cat1.jpg';
 import categ2 from './cat2.jpg';
@@ -34,12 +34,12 @@ export const blog_data = [
     {
     id:1,
     title:"a detailed step by step guide to manage your lifestyle",
-    description:"lorem lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem ",
+    description:"You encounter technology every day, from the phone in your pocket to the car you drive and even the medical equipment that saves lives. But have you ever paused to consider what technology actually is? In our modern world, technology is often taken for granted, yet it plays a fundamental role in shaping society. Let’s explore the depth of what technology means, its evolution, the various types, and how it impacts your life At its core, technology refers to the tools, systems, or methods that are developed and used to solve problems, improve processes, and enhance human life. It isn’t just about gadgets or electronics; it’s a broader concept that encompasses any innovation that improves how you interact with the world. In short, technology is anything created to make life easier or more efficient",
     image:blog_pic1,
     date:Date.now(),
     category:"fashion",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:2,
@@ -49,7 +49,7 @@ export const blog_data = [
     date:Date.now(),
     category:"food",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:3,
@@ -59,7 +59,7 @@ export const blog_data = [
     date:Date.now(),
     category:"food",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:4,
@@ -69,7 +69,7 @@ export const blog_data = [
     date:Date.now(),
     category:"travel",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:5,
@@ -79,7 +79,7 @@ export const blog_data = [
     date:Date.now(),
     category:"culture",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:6,
@@ -89,7 +89,7 @@ export const blog_data = [
     date:Date.now(),
     category:"fashion",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:7,
@@ -99,7 +99,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:8,
@@ -109,7 +109,7 @@ export const blog_data = [
     date:Date.now(),
     category:"fashion",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:9,
@@ -119,7 +119,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:10,
@@ -129,7 +129,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:11,
@@ -139,7 +139,7 @@ export const blog_data = [
     date:Date.now(),
     category:"food",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     },
     {
     id:12,
@@ -149,7 +149,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img
+    author_img:author_img1
     }
 
 

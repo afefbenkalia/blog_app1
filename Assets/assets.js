@@ -14,7 +14,7 @@ import facebook from './facebook.png';
 import google from './google.png';
 import logo from './logo.jpg';
 import twitter from './twitter.png';
-import author_img1 from './author_img.jpg';
+import profile_icon from './profile_icon.jpg';
 import image from './image.png';
 import categ1 from './cat1.jpg';
 import categ2 from './cat2.jpg';
@@ -24,7 +24,7 @@ import categ5 from './cat5.jpg';
 import categ6 from './cat6.jpg';
 
 export const assets ={
-    add,arrow_right,blog_pencil,cloud_upload,envelope,facebook,google,logo,twitter,image
+    add,arrow_right,blog_pencil,cloud_upload,envelope,facebook,google,logo,twitter,image,profile_icon
 }
 export const category ={
     categ1,categ2,categ3,categ4,categ5,categ6
@@ -39,7 +39,7 @@ export const blog_data = [
     date:Date.now(),
     category:"fashion",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:2,
@@ -49,7 +49,7 @@ export const blog_data = [
     date:Date.now(),
     category:"food",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:3,
@@ -59,7 +59,7 @@ export const blog_data = [
     date:Date.now(),
     category:"food",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:4,
@@ -69,7 +69,7 @@ export const blog_data = [
     date:Date.now(),
     category:"travel",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:5,
@@ -79,7 +79,7 @@ export const blog_data = [
     date:Date.now(),
     category:"culture",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:6,
@@ -89,7 +89,7 @@ export const blog_data = [
     date:Date.now(),
     category:"fashion",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:7,
@@ -99,7 +99,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:8,
@@ -109,7 +109,7 @@ export const blog_data = [
     date:Date.now(),
     category:"fashion",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:9,
@@ -119,7 +119,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:10,
@@ -129,7 +129,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:11,
@@ -139,7 +139,7 @@ export const blog_data = [
     date:Date.now(),
     category:"food",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     },
     {
     id:12,
@@ -149,7 +149,7 @@ export const blog_data = [
     date:Date.now(),
     category:"coding",
     author:"alex Bennett",
-    author_img:author_img1
+    author_img:profile_icon
     }
 
 

@@ -1,5 +1,7 @@
 'use client'
-import React, { useState } from 'react';
+import axios from 'axios';
+
+import React, { useEffect, useState } from 'react';
 import styles from './BlogList.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,6 +9,16 @@ import { blog_data, category } from '@/Assets/assets';
 import BlogItem from './BlogItem';
 const BlogList = () =>{
     const [menu,setMenu]=useState("all");
+    const [blogs,setBlogs] = useState([]);
+    const fetchBlogs = async ()=>{
+        const response = await axios.get('/api/blog');
+        setBlogs(response.data.blogs);
+        console.log(response.data.blogs);
+    }
+    useEffect(()=>{
+        fetchBlogs();
+    },[])
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Popular categories</h1>
@@ -40,8 +52,8 @@ const BlogList = () =>{
             </div>
             <div className='flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24'>
                 {
-                    blog_data.filter((item)=> menu==="all"?true:item.category===menu).map((item,index)=>{
-                        return <BlogItem key={index} /*blocs id */id={item.id} image={item.image} title={item.title} description={item.description} category={item.category}/>
+                    blogs.filter((item)=> menu==="all"?true:item.category===menu).map((item,index)=>{
+                        return <BlogItem key={index} /*blocs id */id={item._id} image={item.image} title={item.title} description={item.description} category={item.category}/>
                     })
                 }
 

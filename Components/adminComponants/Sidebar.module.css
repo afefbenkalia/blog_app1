@@ -1,15 +1,16 @@
 .container {
+    position: absolute;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
-    height: 100vh;
     padding: 1rem;
 }
 
 .sidebar {
-    width: 17rem;
-    height: 95vh;
+    width: 10rem;
+    height: 100vh;
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -52,7 +53,7 @@
 }
 
 .menuItem:hover {
-    background: #d195be;
+    background: #e5a7d1;
     color: white;
     box-shadow: inset 4px 4px 8px rgba(255, 255, 255, 0.3),
                 inset -4px -4px 8px rgba(0, 0, 0, 0.1);
